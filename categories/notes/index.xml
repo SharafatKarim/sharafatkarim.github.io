@@ -1,0 +1,33 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>notes - Category - Sharafat Karim</title>
+        <link>https://sharafat.pages.dev/categories/notes/</link>
+        <description>notes - Category - Sharafat Karim</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sharafat2004@gmail.com (Sharafat Karim)</managingEditor>
+            <webMaster>sharafat2004@gmail.com (Sharafat Karim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 20 Oct 2022 08:22:05 &#43;0600</lastBuildDate><atom:link href="https://sharafat.pages.dev/categories/notes/" rel="self" type="application/rss+xml" /><item>
+    <title>Markdown Syntax</title>
+    <link>https://sharafat.pages.dev/markdown/</link>
+    <pubDate>Thu, 20 Oct 2022 08:22:05 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/markdown/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/featured-image.png" referrerpolicy="no-referrer">
+            </div>This article shows some useful and daily-driver type syntax, that I may use daily. First, right after heading, one example , followed by it&rsquo;s syntax. I won&rsquo;t explain though 😅.
+Note To learn in detail and easily, you may use following references,
+LoveIt theme documentation GRAV documentation and of course, there is GitHub wiki. I don&rsquo;t think I need to mention this. 😅
+Text formatting List 1 2 * text * text text text 1 2 3 4 5 + text - text - text - text + text text text text text text Note (Above code) +/- doesn&rsquo;t matter here!]]></description>
+</item>
+<item>
+    <title>Love It, Hugo</title>
+    <link>https://sharafat.pages.dev/love-it-hugo/</link>
+    <pubDate>Wed, 19 Oct 2022 11:59:01 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/love-it-hugo/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Umm, Love It, and hugo? What&rsquo;s going on?
+Hugo
+A static site genarator
+Love It
+Yet an another hugo theme
+What&rsquo;s big deal? This article is mainly about Love IT theme&rsquo;s specialities but maybe you can go ahead to it&rsquo;s repo and learn for your own. So I&rsquo;ll be focusing on it&rsquo;s shortcodes which is an important element in hugo!
+If you don&rsquo;t know about shortcodes then here&rsquo;s an example, Writing,]]></description>
+</item>
+</channel>
+</rss>

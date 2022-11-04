@@ -1,0 +1,32 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>linux - Tag - Sharafat Karim</title>
+        <link>https://sharafat.pages.dev/tags/linux/</link>
+        <description>linux - Tag - Sharafat Karim</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sharafat2004@gmail.com (Sharafat Karim)</managingEditor>
+            <webMaster>sharafat2004@gmail.com (Sharafat Karim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 30 Oct 2022 08:41:37 &#43;0600</lastBuildDate><atom:link href="https://sharafat.pages.dev/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>zsh and antigen - installation to customization</title>
+    <link>https://sharafat.pages.dev/zsh-and-antigen/</link>
+    <pubDate>Sun, 30 Oct 2022 08:41:37 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/zsh-and-antigen/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/featured-image.png" referrerpolicy="no-referrer">
+            </div>A guide to install and customize zsh along with different plugins with the help of antigen plugin manager.]]></description>
+</item>
+<item>
+    <title>Useful Linux Applications</title>
+    <link>https://sharafat.pages.dev/useful-linux-applications/</link>
+    <pubDate>Sat, 29 Oct 2022 08:34:36 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/useful-linux-applications/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/useful-linux-apps.png" referrerpolicy="no-referrer">
+            </div>Yet an another list of useful Applications that you can try in Linux.]]></description>
+</item>
+<item>
+    <title>আমার দেখা একটি সেরা Linux distro (manjaro Linux)</title>
+    <link>https://sharafat.pages.dev/reason-for-manjaro-bangla-1/</link>
+    <pubDate>Fri, 21 Oct 2022 06:03:15 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/reason-for-manjaro-bangla-1/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/best-linux-distro.png" referrerpolicy="no-referrer">
+            </div>Manjaro সর্বপ্রথম ব্যবহার যোগ্য distro হওয়ার পিছনের কারণসমূহ]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,31 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>website - Tag - Sharafat Karim</title>
+        <link>https://sharafat.pages.dev/tags/website/</link>
+        <description>website - Tag - Sharafat Karim</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sharafat2004@gmail.com (Sharafat Karim)</managingEditor>
+            <webMaster>sharafat2004@gmail.com (Sharafat Karim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 19 Oct 2022 11:59:01 &#43;0600</lastBuildDate><atom:link href="https://sharafat.pages.dev/tags/website/" rel="self" type="application/rss+xml" /><item>
+    <title>Love It, Hugo</title>
+    <link>https://sharafat.pages.dev/love-it-hugo/</link>
+    <pubDate>Wed, 19 Oct 2022 11:59:01 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/love-it-hugo/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Umm, Love It, and hugo? What&rsquo;s going on?
+Hugo
+A static site genarator
+Love It
+Yet an another hugo theme
+What&rsquo;s big deal? This article is mainly about Love IT theme&rsquo;s specialities but maybe you can go ahead to it&rsquo;s repo and learn for your own. So I&rsquo;ll be focusing on it&rsquo;s shortcodes which is an important element in hugo!
+If you don&rsquo;t know about shortcodes then here&rsquo;s an example, Writing,]]></description>
+</item>
+<item>
+    <title>A Fresh Start!</title>
+    <link>https://sharafat.pages.dev/a-fresh-start/</link>
+    <pubDate>Mon, 17 Oct 2022 10:11:05 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/a-fresh-start/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/featured-image" referrerpolicy="no-referrer">
+            </div><p>There&rsquo;s an another feeling whenever you do something for the first time, right? And this is the first post of this website so it&rsquo;s quite important for me 😅.
+Let&rsquo;s get started!</p>]]></description>
+</item>
+</channel>
+</rss>

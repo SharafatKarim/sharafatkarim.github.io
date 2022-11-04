@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Chaotic AUR সম্পর্কে কিছুটা প্রশ্ন উত্তর - Sharafat Karim</title><meta name="description" content="A simple, personal and minimal blog site!"><meta property="og:title" content="Chaotic AUR সম্পর্কে কিছুটা প্রশ্ন উত্তর" />
+<meta property="og:description" content="কেনো chaotic AUR? compile করতে হবে না - সময় সাশ্রয় আর মনে করেন আপনারটা ব্রাউজার AUR থেকে কম্পাইল করবেন আশা করি আর আপনাকে কিছু বলতে হবেনা Alert! Chaotic AUR শুধুমাত্র archlinux বা, এর derivative, যেমন: endeavour os, archolinux এর জন্য। অবশ্য manjaro তেও কাজ করবে। সাধারণত আমরা ব্রাউজার ৭০ মেগাবাইট বা এর কাছাকাছি কিছু একটা সাইজ দিয়ে নামাতে পারি কিন্তু যখন আপনি একটা ব্রাউজার কম্পাইল করবেন তখন আপনাকে সে ব্রাউজার যে প্রোগ্রামিং ল্যাঙ্গুয়েজ দিয়ে তৈরি সেই প্রোগ্রামিং ল্যাঙ্গুয়েজের কম্পাইলার ডাউনলোড করবে সোর্স কোড থেকে compile করবে তারপর ইন্সটল করবে তারপর আবার ডিপেন্ডেন্সি গুলো আনইন্সটল করে দিবে এবার চিন্তা করে দেখেন কি পরিমাণ সময় লাগতাছে আর কি পরিমাণ ডাটা খরচ হচ্ছে যেমন: বাস্তব অভিজ্ঞতা, enve (compile করা ভার্সন 70 MB এর কাছাকাছি) কিন্ত যখন সোর্স কোড থেকে build করবো সোর্স কোড (হয়তো সর্বোচ্চ 2 থেকে 3 মেগাবাইট) dependency (বিশ্বাস করুন আর না করুন এটা ডিপেন্ডেন্সি 2gb থেকেও বিশাল বড়) তারপর আবার সোর্স থেকেbuild করতে কি পরিমান যে সময় লাগবে সেটা আপনি নিজে চেষ্টা না করলে বুঝবেন না btw, এই enve সফটওয়্যার chaotic AUR এ নাই, অর্থাৎ আপনাকে appimage বা flatpak এর আশ্রয় নিয়ে হবে অথবা কোনো দয়াবান যদি কম্পাইল করে ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sharafat.pages.dev/chaotic-aur-faq-bangla/" /><meta property="og:image" content="https://sharafat.pages.dev/chaotic-aur-faq-bangla/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-21T08:24:27+06:00" />
+<meta property="article:modified_time" content="2022-10-21T08:24:27+06:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sharafat.pages.dev/chaotic-aur-faq-bangla/featured-image.png"/>
+<meta name="twitter:title" content="Chaotic AUR সম্পর্কে কিছুটা প্রশ্ন উত্তর"/>
+<meta name="twitter:description" content="কেনো chaotic AUR? compile করতে হবে না - সময় সাশ্রয় আর মনে করেন আপনারটা ব্রাউজার AUR থেকে কম্পাইল করবেন আশা করি আর আপনাকে কিছু বলতে হবেনা Alert! Chaotic AUR শুধুমাত্র archlinux বা, এর derivative, যেমন: endeavour os, archolinux এর জন্য। অবশ্য manjaro তেও কাজ করবে। সাধারণত আমরা ব্রাউজার ৭০ মেগাবাইট বা এর কাছাকাছি কিছু একটা সাইজ দিয়ে নামাতে পারি কিন্তু যখন আপনি একটা ব্রাউজার কম্পাইল করবেন তখন আপনাকে সে ব্রাউজার যে প্রোগ্রামিং ল্যাঙ্গুয়েজ দিয়ে তৈরি সেই প্রোগ্রামিং ল্যাঙ্গুয়েজের কম্পাইলার ডাউনলোড করবে সোর্স কোড থেকে compile করবে তারপর ইন্সটল করবে তারপর আবার ডিপেন্ডেন্সি গুলো আনইন্সটল করে দিবে এবার চিন্তা করে দেখেন কি পরিমাণ সময় লাগতাছে আর কি পরিমাণ ডাটা খরচ হচ্ছে যেমন: বাস্তব অভিজ্ঞতা, enve (compile করা ভার্সন 70 MB এর কাছাকাছি) কিন্ত যখন সোর্স কোড থেকে build করবো সোর্স কোড (হয়তো সর্বোচ্চ 2 থেকে 3 মেগাবাইট) dependency (বিশ্বাস করুন আর না করুন এটা ডিপেন্ডেন্সি 2gb থেকেও বিশাল বড়) তারপর আবার সোর্স থেকেbuild করতে কি পরিমান যে সময় লাগবে সেটা আপনি নিজে চেষ্টা না করলে বুঝবেন না btw, এই enve সফটওয়্যার chaotic AUR এ নাই, অর্থাৎ আপনাকে appimage বা flatpak এর আশ্রয় নিয়ে হবে অথবা কোনো দয়াবান যদি কম্পাইল করে ."/>
+<meta name="application-name" content="Sharafat Karim">
+<meta name="apple-mobile-web-app-title" content="Sharafat Karim"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sharafat.pages.dev/chaotic-aur-faq-bangla/" /><link rel="prev" href="https://sharafat.pages.dev/font-and-glyph-bangla-1/" /><link rel="next" href="https://sharafat.pages.dev/software-telemetry-bangla/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css">
+        <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Chaotic AUR সম্পর্কে কিছুটা প্রশ্ন উত্তর",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/sharafat.pages.dev\/chaotic-aur-faq-bangla\/"
+        },"genre": "posts","keywords": "aur, archlinux","wordcount":  311 ,
+        "url": "https:\/\/sharafat.pages.dev\/chaotic-aur-faq-bangla\/","datePublished": "2022-10-21T08:24:27+06:00","dateModified": "2022-10-21T08:24:27+06:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "Sharafat Karim"},"author": {
+                "@type": "Person",
+                "name": "Sharafat Karim"
+            },"description": ""
+    }
+    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-295ZHXJQ1B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-295ZHXJQ1B', { 'anonymize_ip': false });
+}
+</script>
+</head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Sharafat Karim"><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="All posts"> Posts </a><a class="menu-item" href="/tags/" title="All tags"> Tags </a><a class="menu-item" href="/categories/" title="All categories"> Categories </a><a class="menu-item" href="/projects/" title="Projects, repos and documentations"> Projects </a><a class="menu-item" href="/about/" title="About Me"> About </a><a class="menu-item" href="https://github.com/SharafatKarim" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-en='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Sharafat Karim"><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="All posts">Posts</a><a class="menu-item" href="/tags/" title="All tags">Tags</a><a class="menu-item" href="/categories/" title="All categories">Categories</a><a class="menu-item" href="/projects/" title="Projects, repos and documentations">Projects</a><a class="menu-item" href="/about/" title="About Me">About</a><a class="menu-item" href="https://github.com/SharafatKarim" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-en='true'></i></a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="enable"><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="featured-image.png"
+        data-srcset="/chaotic-aur-faq-bangla/featured-image.png, featured-image.png 1.5x, /chaotic-aur-faq-bangla/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/chaotic-aur-faq-bangla/featured-image.png"
+        title="/chaotic-aur-faq-bangla/featured-image.png" /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Chaotic AUR সম্পর্কে কিছুটা প্রশ্ন উত্তর</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/about/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Sharafat Karim</a></span>&nbsp;<span class="post-category">published in <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>linux</a></span></div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-10-21">2022-10-21</time></span>&nbsp;<span><i class="fas fa-pencil-alt fa-fw"></i>&nbsp;311 words</span>&nbsp;
+                    <span><i class="far fa-clock fa-fw"></i>&nbsp;2 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fas fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#কন-chaotic-aur">কেনো chaotic AUR?</a></li>
+    <li><a href="#fun-fact-img-srchttps2imgnetifaismilesicon_flowerpng-altflower-longdesc59">fun fact <img src="https://2img.net/i/fa/i/smiles/icon_flower.png" alt="flower" longdesc="59"></a></li>
+    <li><a href="#extra-img-srchttps2imgnetifaismilesicon_santapng-altsanta-longdesc49">Extra <img src="https://2img.net/i/fa/i/smiles/icon_santa.png" alt="santa" longdesc="49"></a>
+      <ul>
+        <li><a href="#pacakge-availability">pacakge availability</a></li>
+      </ul>
+    </li>
+    <li><a href="#কভব-তহল-ইনসটল-করবন">কিভাবে তাহলে ইন্সটল করবেন?</a></li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><h2 id="কন-chaotic-aur">কেনো chaotic AUR?</h2>
+<p>compile করতে হবে না  - সময় সাশ্রয়    আর মনে করেন আপনারটা ব্রাউজার AUR থেকে কম্পাইল করবেন <img class="emojione" alt="😅" title="😅" src="https://cdn.jsdelivr.net/emojione/assets/png/1f605.png?v=2.2.7">  আশা করি আর আপনাকে কিছু বলতে হবেনা <img class="emojione" alt="😆" title="😆" src="https://cdn.jsdelivr.net/emojione/assets/png/1f606.png?v=2.2.7"></p>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Alert!<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Chaotic AUR শুধুমাত্র archlinux বা, এর derivative, যেমন: endeavour os, archolinux এর জন্য। অবশ্য manjaro তেও কাজ করবে।</div>
+        </div>
+    </div>
+<p>সাধারণত আমরা ব্রাউজার ৭০ মেগাবাইট বা এর কাছাকাছি কিছু একটা সাইজ দিয়ে নামাতে পারি কিন্তু যখন আপনি একটা ব্রাউজার কম্পাইল করবেন তখন আপনাকে সে ব্রাউজার যে প্রোগ্রামিং ল্যাঙ্গুয়েজ দিয়ে তৈরি সেই প্রোগ্রামিং ল্যাঙ্গুয়েজের কম্পাইলার ডাউনলোড করবে সোর্স কোড থেকে compile  করবে তারপর ইন্সটল করবে তারপর আবার ডিপেন্ডেন্সি গুলো আনইন্সটল করে দিবে এবার চিন্তা করে দেখেন কি পরিমাণ সময় লাগতাছে আর কি পরিমাণ ডাটা খরচ হচ্ছে <img class="emojione" alt="😅" title="😅" src="https://cdn.jsdelivr.net/emojione/assets/png/1f605.png?v=2.2.7">    যেমন: বাস্তব অভিজ্ঞতা,  <img src="https://2img.net/i/fa/i/smiles/icon_king.png" alt="king" longdesc="52">    enve  (compile করা ভার্সন 70 MB এর কাছাকাছি)    কিন্ত যখন সোর্স কোড থেকে build করবো  সোর্স কোড (হয়তো সর্বোচ্চ 2 থেকে 3 মেগাবাইট)  dependency (বিশ্বাস করুন আর না করুন এটা ডিপেন্ডেন্সি 2gb থেকেও বিশাল বড়)  তারপর আবার সোর্স থেকেbuild করতে কি পরিমান যে সময় লাগবে সেটা আপনি নিজে চেষ্টা না করলে বুঝবেন না    btw, এই enve সফটওয়্যার chaotic AUR এ নাই, অর্থাৎ আপনাকে appimage বা flatpak এর আশ্রয় নিয়ে হবে    অথবা কোনো দয়াবান যদি কম্পাইল করে  .pkg.tar file টা নিয়মিত আপলোড করে</p>
+<h2 id="fun-fact-img-srchttps2imgnetifaismilesicon_flowerpng-altflower-longdesc59">fun fact <img src="https://2img.net/i/fa/i/smiles/icon_flower.png" alt="flower" longdesc="59"></h2>
+<p>enve software হুবহু adobe after effects এর মত ইন্টারফেস আর অ্যানিমেশন লেভেল অনেক high অথচ অধিকাংশ মানুষ জনেও না, contribute ও করে না, আর এখনো alpha stage এ রয়ে গেছে</p>
+<h2 id="extra-img-srchttps2imgnetifaismilesicon_santapng-altsanta-longdesc49">Extra <img src="https://2img.net/i/fa/i/smiles/icon_santa.png" alt="santa" longdesc="49"></h2>
+<h3 id="pacakge-availability">pacakge availability</h3>
+<p>আর AUR এর কেবল ইম্পর্ট্যান্ট আর বেশি vote আছে এরকম pacakge chaotic AUR এ আছে, chaotic AUR তেমন বড়সর কিছুই না, এবং chaotic AUR এ কমন অনেক কিছুই নাই</p>
+<h2 id="কভব-তহল-ইনসটল-করবন">কিভাবে তাহলে ইন্সটল করবেন?</h2>
+<p>সোজা তাদের <a href="https://aur.chaotic.cx/" target="_blank" rel="noopener noreffer">Official website</a> এ চলে যান, সেখানে বিস্তারিত বলা আছে!</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>আরেকটি কথা!<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>আপনি চাইলে অবশ্য terminal এ একটি লেখা রান করে আমার তৈরি একটা script এর মাধ্যমে chaotic AUR install করতে পারবেন। বিস্তারিত এই লিংকে পাবেন:</p>
+<ul>
+<li><a href="https://github.com/SharafatKarim/chaotic-AUR-installer" target="_blank" rel="noopener noreffer">Chaotic AUR installation script</a></li>
+</ul>
+<p>হয়তো এই বিষয়ে আরেকটি post লিখবো 😅</p>
+</div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/aur/">aur</a>
+                </span><span><a href="/tags/archlinux/">archlinux</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2022-10-21</span>
+            </div><div class="post-info-mod"><span>
+                            <a class="link-to-markdown" href="/chaotic-aur-faq-bangla/index.md" target="_blank">Read Markdown</a>
+                        </span><span>
+                        &nbsp;|&nbsp;
+                        <a class="link-to-markdown" href="https://github.com/SharafatKarim/blog-site/edit/main/posts/2022/chaotic-AUR-faq-bangla/index.md" target="_blank">Improve Article</a>
+                    </span></div>
+        </div><div class="post-info-share">
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://sharafat.pages.dev/chaotic-aur-faq-bangla/" data-title="Chaotic AUR সম্পর্কে কিছুটা প্রশ্ন উত্তর" data-via="sharafat2004" data-hashtags="aur,archlinux"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://sharafat.pages.dev/chaotic-aur-faq-bangla/" data-hashtag="aur"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://sharafat.pages.dev/chaotic-aur-faq-bangla/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://sharafat.pages.dev/chaotic-aur-faq-bangla/" data-title="Chaotic AUR সম্পর্কে কিছুটা প্রশ্ন উত্তর" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Pinterest" data-sharer="pinterest" data-url="https://sharafat.pages.dev/chaotic-aur-faq-bangla/" data-image="featured-image.png"><i class="fab fa-pinterest fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://sharafat.pages.dev/chaotic-aur-faq-bangla/" data-title="Chaotic AUR সম্পর্কে কিছুটা প্রশ্ন উত্তর"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://sharafat.pages.dev/chaotic-aur-faq-bangla/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="Share on Pocket" data-sharer="pocket" data-url="https://sharafat.pages.dev/chaotic-aur-faq-bangla/"><i class="fab fa-get-pocket fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://sharafat.pages.dev/chaotic-aur-faq-bangla/" data-title="Chaotic AUR সম্পর্কে কিছুটা প্রশ্ন উত্তর" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://sharafat.pages.dev/chaotic-aur-faq-bangla/" data-title="Chaotic AUR সম্পর্কে কিছুটা প্রশ্ন উত্তর"><i class="fab fa-evernote fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/font-and-glyph-bangla-1/" class="prev" rel="prev" title="Font এবং glyph পরিচিতি (পর্ব ১)"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/software-telemetry-bangla/" class="next" rel="next" title="Software Telemetry কি | Basic Concepts">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
+</div><div id="comments" class="single-card"><div id="vssue"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/meteorlxy/vssue">Vssue</a>.
+            </noscript></div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/about/">Sharafat Karim</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+</div>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.min.js?version=1.0.1', { scope: '/' })
+        .then(() => {
+            console.info('Sharafat Karim\u00A0Service Worker Registered');
+        }, err => console.error('Sharafat Karim\u00A0Service Worker registration failed: ', err));
+
+    navigator.serviceWorker
+        .ready
+        .then(() => {
+            console.info('Sharafat Karim\u00A0Service Worker Ready');
+        });
+}
+</script>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-chevron-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment-alt fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vssue@1.4.8/dist/vssue.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.1-beta.0/dist/css/lightgallery.min.css"><script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.runtime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vssue@1.4.8/dist/vssue.github.min.js"></script><script src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.0/dist/autocomplete.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.1-beta.0/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.3.0/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.1/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"vssue":{"clientID":"69d56d7f61527a103699","clientSecret":"3be0ac1b185f1f45efce06b7393c0bc5fb27f7d8","owner":"SharafatKarim","repo":"blog-site","title":"Chaotic AUR সম্পর্কে কিছুটা প্রশ্ন উত্তর"}},"data":{"id-1":"Sharafat Karim","id-2":"Sharafat Karim"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script src="/js/theme.min.js"></script></body></html>

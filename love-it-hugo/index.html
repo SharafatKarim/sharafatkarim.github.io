@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Love It, Hugo - Sharafat Karim</title><meta name="description" content="A simple, personal and minimal blog site!"><meta property="og:title" content="Love It, Hugo" />
+<meta property="og:description" content="Umm, Love It, and hugo? What&rsquo;s going on?
+Hugo
+A static site genarator
+Love It
+Yet an another hugo theme
+What&rsquo;s big deal? This article is mainly about Love IT theme&rsquo;s specialities but maybe you can go ahead to it&rsquo;s repo and learn for your own. So I&rsquo;ll be focusing on it&rsquo;s shortcodes which is an important element in hugo!
+If you don&rsquo;t know about shortcodes then here&rsquo;s an example, Writing," />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sharafat.pages.dev/love-it-hugo/" /><meta property="og:image" content="https://sharafat.pages.dev/love-it-hugo/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-19T11:59:01+06:00" />
+<meta property="article:modified_time" content="2022-10-20T11:59:01+06:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sharafat.pages.dev/love-it-hugo/featured-image.jpg"/>
+<meta name="twitter:title" content="Love It, Hugo"/>
+<meta name="twitter:description" content="Umm, Love It, and hugo? What&rsquo;s going on?
+Hugo
+A static site genarator
+Love It
+Yet an another hugo theme
+What&rsquo;s big deal? This article is mainly about Love IT theme&rsquo;s specialities but maybe you can go ahead to it&rsquo;s repo and learn for your own. So I&rsquo;ll be focusing on it&rsquo;s shortcodes which is an important element in hugo!
+If you don&rsquo;t know about shortcodes then here&rsquo;s an example, Writing,"/>
+<meta name="application-name" content="Sharafat Karim">
+<meta name="apple-mobile-web-app-title" content="Sharafat Karim"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sharafat.pages.dev/love-it-hugo/" /><link rel="prev" href="https://sharafat.pages.dev/roll-back-to-academy/" /><link rel="next" href="https://sharafat.pages.dev/markdown/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css">
+        <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Love It, Hugo",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/sharafat.pages.dev\/love-it-hugo\/"
+        },"genre": "posts","keywords": "hugo, internet, website, documentation, notes","wordcount":  414 ,
+        "url": "https:\/\/sharafat.pages.dev\/love-it-hugo\/","datePublished": "2022-10-19T11:59:01+06:00","dateModified": "2022-10-20T11:59:01+06:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "Sharafat Karim"},"author": {
+                "@type": "Person",
+                "name": "Sharafat Karim"
+            },"description": ""
+    }
+    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-295ZHXJQ1B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-295ZHXJQ1B', { 'anonymize_ip': false });
+}
+</script>
+</head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Sharafat Karim"><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="All posts"> Posts </a><a class="menu-item" href="/tags/" title="All tags"> Tags </a><a class="menu-item" href="/categories/" title="All categories"> Categories </a><a class="menu-item" href="/projects/" title="Projects, repos and documentations"> Projects </a><a class="menu-item" href="/about/" title="About Me"> About </a><a class="menu-item" href="https://github.com/SharafatKarim" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-en='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Sharafat Karim"><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="All posts">Posts</a><a class="menu-item" href="/tags/" title="All tags">Tags</a><a class="menu-item" href="/categories/" title="All categories">Categories</a><a class="menu-item" href="/projects/" title="Projects, repos and documentations">Projects</a><a class="menu-item" href="/about/" title="About Me">About</a><a class="menu-item" href="https://github.com/SharafatKarim" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-en='true'></i></a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="enable"><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="featured-image.jpg"
+        data-srcset="/love-it-hugo/featured-image.jpg, featured-image.jpg 1.5x, /love-it-hugo/featured-image.jpg 2x"
+        data-sizes="auto"
+        alt="/love-it-hugo/featured-image.jpg"
+        title="/love-it-hugo/featured-image.jpg" /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">Love It, Hugo</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/about/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Sharafat Karim</a></span>&nbsp;<span class="post-category">published in <a href="/categories/notes/"><i class="far fa-folder fa-fw"></i>notes</a></span></div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-10-19">2022-10-19</time></span>&nbsp;<span><i class="fas fa-pencil-alt fa-fw"></i>&nbsp;414 words</span>&nbsp;
+                    <span><i class="far fa-clock fa-fw"></i>&nbsp;2 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fas fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#whats-big-deal">What&rsquo;s big deal?</a>
+      <ul>
+        <li><a href="#some-useful-shortcodes">Some useful shortcodes</a></li>
+        <li><a href="#admonition-it-is">Admonition, it is!</a></li>
+      </ul>
+    </li>
+    <li><a href="#links-and-references">Links and references</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#extra">Extra</a></li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><p>Umm, Love It, and hugo? What&rsquo;s going on?</p>
+<blockquote>
+<p>Hugo</p>
+<blockquote>
+<p>A static site genarator</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>Love It</p>
+<blockquote>
+<p>Yet an another hugo theme</p>
+</blockquote>
+</blockquote>
+<h2 id="whats-big-deal">What&rsquo;s big deal?</h2>
+<p>This article is mainly about <code>Love IT</code> theme&rsquo;s specialities but maybe you can go ahead to it&rsquo;s <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer">repo</a> and learn for your own. So I&rsquo;ll be focusing on it&rsquo;s shortcodes which is an important element in hugo!</p>
+<p>If you don&rsquo;t know about shortcodes then here&rsquo;s an example,
+Writing,</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">youtube</span> <span class="na">ULDrp20nwfE</span>  <span class="p">&gt;</span>}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>will output,</p>
+
+<div class="video">
+  <iframe src="https://www.youtube-nocookie.com/embed/ULDrp20nwfE" allow="fullscreen" title="YouTube Video"></iframe>
+</div>
+
+<p>So, long story short, if you want to learn more about shortcodes check <a href="#links-and-references" rel="">Links and references</a></p>
+<h3 id="some-useful-shortcodes">Some useful shortcodes</h3>
+<p>What I like most is admonition! Also there are quite a few but I like it more than others. Here&rsquo;s some sample:</p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i>Note<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A <strong>note</strong> banner</div>
+        </div>
+    </div>
+<div class="details admonition abstract open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw"></i>Abstract<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">An <strong>abstract</strong> banner</div>
+        </div>
+    </div>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A <strong>info</strong> banner</div>
+        </div>
+    </div>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>Tip<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A <strong>tip</strong> banner</div>
+        </div>
+    </div>
+<div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw"></i>Success<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A <strong>success</strong> banner</div>
+        </div>
+    </div>
+<div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw"></i>Question<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A <strong>question</strong> banner</div>
+        </div>
+    </div>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A <strong>warning</strong> banner</div>
+        </div>
+    </div>
+<div class="details admonition failure open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-times-circle fa-fw"></i>Failure<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A <strong>failure</strong> banner</div>
+        </div>
+    </div>
+<div class="details admonition danger open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-skull-crossbones fa-fw"></i>Danger<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A <strong>danger</strong> banner</div>
+        </div>
+    </div>
+<div class="details admonition bug open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-bug fa-fw"></i>Bug<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A <strong>bug</strong> banner</div>
+        </div>
+    </div>
+<div class="details admonition example open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ol fa-fw"></i>Example<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">An <strong>example</strong> banner</div>
+        </div>
+    </div>
+<div class="details admonition quote open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-quote-right fa-fw"></i>Quote<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A <strong>quote</strong> banner</div>
+        </div>
+    </div>
+<h3 id="admonition-it-is">Admonition, it is!</h3>
+<p>So how do we actually use it? 🧐</p>
+<p>Here&rsquo;s an input,</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">type</span><span class="o">=</span><span class="s">tip</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;This is a tip&#34;</span> <span class="na">open</span><span class="o">=</span><span class="s">false</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">A <span class="gs">**tip**</span> banner
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">Or
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">tip</span> <span class="err">&#34;</span><span class="na">This</span> <span class="na">is</span> <span class="na">a</span> <span class="na">tip</span><span class="err">&#34;</span> <span class="na">false</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">A <span class="gs">**tip**</span> banner
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>And the output:
+<div class="details admonition tip">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>This is a tip<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A <strong>tip</strong> banner</div>
+        </div>
+    </div></p>
+<div class="details admonition quote">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-quote-right fa-fw"></i>Fun Fact<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">You know what? Above admonition part is directly copy pasted from Extended shortcodes part of Love It&rsquo;s documentation 😅</div>
+        </div>
+    </div>
+<h2 id="links-and-references">Links and references</h2>
+<p>Here are some links for faster access:</p>
+<ul>
+<li><a href="https://gohugo.io/" target="_blank" rel="noopener noreffer">Hugo</a></li>
+<li><a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer">Love It repo</a></li>
+<li><a href="https://hugoloveit.com/" target="_blank" rel="noopener noreffer">Love It website</a></li>
+</ul>
+<p>And some links to some documentations:</p>
+<ul>
+<li><a href="https://hugoloveit.com/theme-documentation-basics/" target="_blank" rel="noopener noreffer">Theme Installation</a></li>
+<li><a href="https://hugoloveit.com/theme-documentation-content/" target="_blank" rel="noopener noreffer">Theme Installation Content</a></li>
+<li><a href="https://hugoloveit.com/basic-markdown-syntax/" target="_blank" rel="noopener noreffer">Markdown syntax</a></li>
+<li><a href="https://hugoloveit.com/emoji-support/" target="_blank" rel="noopener noreffer">Emoji support</a></li>
+<li><a href="https://hugoloveit.com/theme-documentation-built-in-shortcodes/" target="_blank" rel="noopener noreffer">Built in shortcodes</a></li>
+</ul>
+<p>And some extended shortcodes:</p>
+<ul>
+<li><a href="https://hugoloveit.com/theme-documentation-extended-shortcodes/" target="_blank" rel="noopener noreffer">Extended shortcodes</a></li>
+<li><a href="https://hugoloveit.com/theme-documentation-mermaid-shortcode/" target="_blank" rel="noopener noreffer">Mermaid shortcodes</a></li>
+<li><a href="https://hugoloveit.com/theme-documentation-echarts-shortcode/" target="_blank" rel="noopener noreffer">Echarts shortcodes</a></li>
+<li><a href="https://hugoloveit.com/theme-documentation-mapbox-shortcode/" target="_blank" rel="noopener noreffer">Mapbox shortcodes</a></li>
+<li><a href="https://hugoloveit.com/theme-documentation-music-shortcode/" target="_blank" rel="noopener noreffer">Music shortcodes</a></li>
+<li><a href="https://hugoloveit.com/theme-documentation-bilibili-shortcode/" target="_blank" rel="noopener noreffer">Bilibili shortcodes</a></li>
+<li><a href="https://hugoloveit.com/theme-documentation-typeit-shortcode/" target="_blank" rel="noopener noreffer">TypeIt shortcodes</a></li>
+</ul>
+<p>Happy content creation!</p>
+<h2 id="faq">FAQ</h2>
+<p>Do I need to learn html, css or anything else for generating static sites?</p>
+<ul>
+<li>Short answer, no. Long answer, maybe duckduckgo and Google can help you find it. 🎯</li>
+</ul>
+<p>Is it free?</p>
+<ul>
+<li>Well, if you host on GitHub and don&rsquo;t need any domain just like me, then yeah! It&rsquo;s free.</li>
+</ul>
+<p>Got any more question?</p>
+<ul>
+<li>Feel free to text me ✨</li>
+</ul>
+<h2 id="extra">Extra</h2>
+<p>Let me share a trick! In this website, you&rsquo;ll see headings starting with a vertical line or <code>#</code>, You can basically right click on them and copy a link which will work as a hyperlink to that specific Heading!</p>
+<ul>
+<li><a href="https://sharafatkarim.github.io/markdown-syntax/" target="_blank" rel="noopener noreffer">Read more here</a> about markdown from me!</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/hugo/">hugo</a>
+                </span><span><a href="/tags/internet/">internet</a>
+                </span><span><a href="/tags/website/">website</a>
+                </span><span><a href="/tags/documentation/">documentation</a>
+                </span><span><a href="/tags/notes/">notes</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2022-10-20</span>
+            </div><div class="post-info-mod"><span>
+                            <a class="link-to-markdown" href="/love-it-hugo/index.md" target="_blank">Read Markdown</a>
+                        </span><span>
+                        &nbsp;|&nbsp;
+                        <a class="link-to-markdown" href="https://github.com/SharafatKarim/blog-site/edit/main/posts/2022/love-it-hugo/index.md" target="_blank">Improve Article</a>
+                    </span></div>
+        </div><div class="post-info-share">
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://sharafat.pages.dev/love-it-hugo/" data-title="Love It, Hugo" data-via="sharafat2004" data-hashtags="hugo,internet,website,documentation,notes"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://sharafat.pages.dev/love-it-hugo/" data-hashtag="hugo"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://sharafat.pages.dev/love-it-hugo/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://sharafat.pages.dev/love-it-hugo/" data-title="Love It, Hugo" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Pinterest" data-sharer="pinterest" data-url="https://sharafat.pages.dev/love-it-hugo/" data-image="featured-image.jpg"><i class="fab fa-pinterest fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://sharafat.pages.dev/love-it-hugo/" data-title="Love It, Hugo"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://sharafat.pages.dev/love-it-hugo/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="Share on Pocket" data-sharer="pocket" data-url="https://sharafat.pages.dev/love-it-hugo/"><i class="fab fa-get-pocket fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://sharafat.pages.dev/love-it-hugo/" data-title="Love It, Hugo" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://sharafat.pages.dev/love-it-hugo/" data-title="Love It, Hugo"><i class="fab fa-evernote fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/roll-back-to-academy/" class="prev" rel="prev" title="Roll back to academy"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/markdown/" class="next" rel="next" title="Markdown Syntax">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
+</div><div id="comments" class="single-card"><div id="vssue"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/meteorlxy/vssue">Vssue</a>.
+            </noscript></div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/about/">Sharafat Karim</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+</div>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.min.js?version=1.0.1', { scope: '/' })
+        .then(() => {
+            console.info('Sharafat Karim\u00A0Service Worker Registered');
+        }, err => console.error('Sharafat Karim\u00A0Service Worker registration failed: ', err));
+
+    navigator.serviceWorker
+        .ready
+        .then(() => {
+            console.info('Sharafat Karim\u00A0Service Worker Ready');
+        });
+}
+</script>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-chevron-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment-alt fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vssue@1.4.8/dist/vssue.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.1-beta.0/dist/css/lightgallery.min.css"><script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.runtime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vssue@1.4.8/dist/vssue.github.min.js"></script><script src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.0/dist/autocomplete.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.1-beta.0/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.3.0/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.1/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"vssue":{"clientID":"69d56d7f61527a103699","clientSecret":"3be0ac1b185f1f45efce06b7393c0bc5fb27f7d8","owner":"SharafatKarim","repo":"blog-site","title":"Love It, Hugo"}},"data":{"id-1":"Sharafat Karim","id-2":"Sharafat Karim"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script src="/js/theme.min.js"></script></body></html>

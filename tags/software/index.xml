@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>software - Tag - Sharafat Karim</title>
+        <link>https://sharafat.pages.dev/tags/software/</link>
+        <description>software - Tag - Sharafat Karim</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sharafat2004@gmail.com (Sharafat Karim)</managingEditor>
+            <webMaster>sharafat2004@gmail.com (Sharafat Karim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 29 Oct 2022 08:34:36 &#43;0600</lastBuildDate><atom:link href="https://sharafat.pages.dev/tags/software/" rel="self" type="application/rss+xml" /><item>
+    <title>Useful Linux Applications</title>
+    <link>https://sharafat.pages.dev/useful-linux-applications/</link>
+    <pubDate>Sat, 29 Oct 2022 08:34:36 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/useful-linux-applications/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/useful-linux-apps.png" referrerpolicy="no-referrer">
+            </div>Yet an another list of useful Applications that you can try in Linux.]]></description>
+</item>
+<item>
+    <title>Software Telemetry কি | Basic Concepts</title>
+    <link>https://sharafat.pages.dev/software-telemetry-bangla/</link>
+    <pubDate>Fri, 21 Oct 2022 08:44:28 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/software-telemetry-bangla/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/featured-image.png" referrerpolicy="no-referrer">
+            </div>আমরা অনেকেই সফটওয়্যারের বিভিন্ন খবরে এই টার্মটির সাথে পরিচিত হই। কখনো কি ভেবে দেখেছেন কি এই টেলিমেট্রি? বাংলা ভাষায় টেলিমেট্রি বলতে বিভিন্ন সংজ্ঞা থাকতে পারে। সেদিকে যাবো না, আপনি চাইলে কিছু প্রয়োগ এই লিংক থেকে দেখে নিতে পারেন।
+Stackify- telemetry tutorial Alexandra Altvater এর মতে, Telemetry is the automatic recording and transmission of data from remote or inaccessible sources to an IT system in a different location for monitoring and analysis.]]></description>
+</item>
+</channel>
+</rss>

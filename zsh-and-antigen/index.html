@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>zsh and antigen - installation to customization - Sharafat Karim</title><meta name="description" content="A guide to install and customize zsh along with different plugins with the help of antigen plugin manager."><meta property="og:title" content="zsh and antigen - installation to customization" />
+<meta property="og:description" content="A guide to install and customize zsh along with different plugins with the help of antigen plugin manager." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sharafat.pages.dev/zsh-and-antigen/" /><meta property="og:image" content="https://sharafat.pages.dev/zsh-and-antigen/featured-image-preview.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-30T08:41:37+06:00" />
+<meta property="article:modified_time" content="2022-10-30T08:41:37+06:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sharafat.pages.dev/zsh-and-antigen/featured-image-preview.png"/>
+<meta name="twitter:title" content="zsh and antigen - installation to customization"/>
+<meta name="twitter:description" content="A guide to install and customize zsh along with different plugins with the help of antigen plugin manager."/>
+<meta name="application-name" content="Sharafat Karim">
+<meta name="apple-mobile-web-app-title" content="Sharafat Karim"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sharafat.pages.dev/zsh-and-antigen/" /><link rel="prev" href="https://sharafat.pages.dev/useful-linux-applications/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css">
+        <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "zsh and antigen - installation to customization",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/sharafat.pages.dev\/zsh-and-antigen\/"
+        },"genre": "posts","keywords": "linux, zsh, tutorial","wordcount":  1454 ,
+        "url": "https:\/\/sharafat.pages.dev\/zsh-and-antigen\/","datePublished": "2022-10-30T08:41:37+06:00","dateModified": "2022-10-30T08:41:37+06:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "Sharafat Karim"},"author": {
+                "@type": "Person",
+                "name": "Sharafat Karim"
+            },"description": "A guide to install and customize zsh along with different plugins with the help of antigen plugin manager."
+    }
+    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-295ZHXJQ1B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-295ZHXJQ1B', { 'anonymize_ip': false });
+}
+</script>
+</head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Sharafat Karim"><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="All posts"> Posts </a><a class="menu-item" href="/tags/" title="All tags"> Tags </a><a class="menu-item" href="/categories/" title="All categories"> Categories </a><a class="menu-item" href="/projects/" title="Projects, repos and documentations"> Projects </a><a class="menu-item" href="/about/" title="About Me"> About </a><a class="menu-item" href="https://github.com/SharafatKarim" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-en='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Sharafat Karim"><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="All posts">Posts</a><a class="menu-item" href="/tags/" title="All tags">Tags</a><a class="menu-item" href="/categories/" title="All categories">Categories</a><a class="menu-item" href="/projects/" title="Projects, repos and documentations">Projects</a><a class="menu-item" href="/about/" title="About Me">About</a><a class="menu-item" href="https://github.com/SharafatKarim" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-en='true'></i></a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="enable"><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="featured-image.png"
+        data-srcset="/zsh-and-antigen/featured-image.png, featured-image.png 1.5x, /zsh-and-antigen/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/zsh-and-antigen/featured-image.png"
+        title="A guide to install and customize zsh along with different plugins with the help of antigen plugin manager." /></div><div class="single-card" data-image="true"><h2 class="single-title animated flipInX">zsh and antigen - installation to customization</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="/about/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Sharafat Karim</a></span>&nbsp;<span class="post-category">published in <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>linux</a></span></div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-10-30">2022-10-30</time></span>&nbsp;<span><i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1454 words</span>&nbsp;
+                    <span><i class="far fa-clock fa-fw"></i>&nbsp;7 minutes</span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fas fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#zsh-and-antigen">ZSH and Antigen</a></li>
+    <li><a href="#why-zsh">Why zsh?</a></li>
+    <li><a href="#why-antigen">Why antigen?</a></li>
+    <li><a href="#installing-zsh">Installing zsh</a></li>
+    <li><a href="#default-shell">Default shell</a></li>
+    <li><a href="#antigen-installation">Antigen Installation</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#zshrc-file">zshrc file</a></li>
+      </ul>
+    </li>
+    <li><a href="#antigen-usage">Antigen Usage</a>
+      <ul>
+        <li><a href="#understanding-zshrc">understanding zshrc</a></li>
+        <li><a href="#understanding-antigen">understanding antigen</a></li>
+      </ul>
+    </li>
+    <li><a href="#plugin-installation">Plugin installation</a>
+      <ul>
+        <li><a href="#zsh-auto-notify">zsh auto notify</a></li>
+        <li><a href="#zsh-autosuggestions">zsh-autosuggestions</a></li>
+        <li><a href="#repo-with-different-branch">Repo with different branch</a></li>
+      </ul>
+    </li>
+    <li><a href="#optimization-and-plugin-settings">Optimization and plugin settings</a></li>
+    <li><a href="#uninstallation">Uninstallation</a></li>
+    <li><a href="#wrapping-up">Wrapping up</a></li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><p>A guide to install and customize zsh along with different plugins with the help of antigen plugin manager. But what are those?</p>
+<h2 id="zsh-and-antigen">ZSH and Antigen</h2>
+<blockquote>
+<p>ZSH</p>
+<blockquote>
+<p>The Z shell! A Unix shell that can be used as an interactive login shell and as a command interpreter for shell scripting.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>Antigen</p>
+<blockquote>
+<p>Yet, an another plugin manager for zsh!</p>
+</blockquote>
+</blockquote>
+<hr>
+<p>Antigen&rsquo;s official <a href="https://github.com/zsh-users/antigen" target="_blank" rel="noopener noreffer">docs</a> says,</p>
+<div class="typeit"><div id="id-1" class=""></div></div>
+
+<hr>
+<h2 id="why-zsh">Why zsh?</h2>
+<p>Why? We&rsquo;ve bash, right? Well, you can extend it&rsquo;s features more easily along with awesome customizations! Do you need anything else?</p>
+<hr>
+<p>Z shell&rsquo;s official <a href="https://www.zsh.org/" target="_blank" rel="noopener noreffer">website</a> says,</p>
+<div class="typeit"><div id="id-2" class=""></div></div>
+
+<hr>
+<p>Still confused? Well, just try once, if you don&rsquo;t like it you can always revert back 😆.</p>
+<h2 id="why-antigen">Why antigen?</h2>
+<p>We&rsquo;ve got a lot of popular zsh plug-in managers like oh-my-zsh, zplug and so on. So why antigen?</p>
+<ul>
+<li>It&rsquo;s fast ✨</li>
+</ul>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i>Well,<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">How do I know it&rsquo;s faster or slower? Check benchmarks from <a href="https://github.com/rossmacarthur/zsh-plugin-manager-benchmark" target="_blank" rel="noopener noreffer">here</a> 😅.
+And if you don&rsquo;t believe this benchmark then run it for yourself. If you notice a significance change then tell that <a href="https://github.com/rossmacarthur" target="_blank" rel="noopener noreffer"> Avatar crab Ross MacArthur</a>, not me 🫠.</div>
+        </div>
+    </div>
+<p>And I think it&rsquo;s more easier. 🎯</p>
+<h2 id="installing-zsh">Installing zsh</h2>
+<p>You can most probably install right from your operating system&rsquo;s official package manager.
+Alternatively, you can check <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms" target="_blank" rel="noopener noreffer">this list</a>, if you need help installing zsh.</p>
+<p>To make sure zsh is installed, fire up your terminal and execute,</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">zsh --version
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="default-shell">Default shell</h2>
+<p>Whenever you fire up your terminal, do you find zsh? If yes, then <code>zsh</code> is your default shell. Alternatively, run the following command,</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="nv">$SHELL</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>If your output is <code>/bin/zsh</code> or <code>/usr/bin/zsh</code> then, zsh is your default shell.</p>
+<p>So how do you make zsh your default?
+run the following command,</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chsh -s <span class="k">$(</span>which zsh<span class="k">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Don&rsquo;t have the admin privilege? Check <a href="https://unix.stackexchange.com/questions/136423/making-zsh-default-shell-without-root-access" target="_blank" rel="noopener noreffer">this thread</a> then.</p>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>And, also<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>don&rsquo;t forget to re-login (log out and log in) to change effect. Don&rsquo;t I need to restart 🧐?</p>
+<p>We don&rsquo;t do that here 😅</p>
+</div>
+        </div>
+    </div>
+<h2 id="antigen-installation">Antigen Installation</h2>
+<h3 id="installation">Installation</h3>
+<p>No big deal, just run the following command,</p>
+<div class="typeit"><div id="id-3" class=" highlight"></div></div>
+
+<hr>
+<p>What will this command do? 🧐</p>
+<p>Go to your home directory(<code>/home/$USER/</code>), you&rsquo;ll find a new file, named <code>antigen.zsh</code>. We&rsquo;ve no business with this file, so let&rsquo;s forget, it exists in our system 😆.</p>
+<hr>
+<p>Believe it or not, antigen is now installed 😅. Now we just have to modify <code>.zshrc</code> file in our home directory. Everything will depend on it! ✨</p>
+<h3 id="zshrc-file">zshrc file</h3>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>What is .zshrc file?<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>This is the file associated with ZSH. It exists on your home directory and it&rsquo;s a hidden file because it&rsquo;s name starts with a dot/ period (<code>.</code>).</p>
+<p>Go to your home directory and look for this file. To show hidden files you have to enable it. Default shortcut is <code>ctrl + h</code>, I think 🧐. And if you&rsquo;re using terminal, then you&rsquo;ve got <code>ls -a</code> command. 😅</p>
+<p>If this file doesn&rsquo;t exit then open a terminal and if zsh is your default shell then you&rsquo;ll be prompted with something strange 😅. No need to worry, just press 0 or skip that part. Cause we&rsquo;re gonna destroy it later 👿.</p>
+</div>
+        </div>
+    </div>
+<hr>
+<p>Now open <code>.zshrc</code> file with our favorite text editor, and prepare for the worst 🎃.</p>
+<p>Copy the following lines to your <code>.zshrc</code> file,</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> ~/antigen.zsh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load the oh-my-zsh&#39;s library.</span>
+</span></span><span class="line"><span class="cl">antigen use oh-my-zsh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Bundles from the default repo (robbyrussell&#39;s oh-my-zsh).</span>
+</span></span><span class="line"><span class="cl">antigen bundle git
+</span></span><span class="line"><span class="cl">antigen bundle heroku
+</span></span><span class="line"><span class="cl">antigen bundle pip
+</span></span><span class="line"><span class="cl">antigen bundle lein
+</span></span><span class="line"><span class="cl">antigen bundle command-not-found
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Syntax highlighting bundle.</span>
+</span></span><span class="line"><span class="cl">antigen bundle zsh-users/zsh-syntax-highlighting
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load the theme.</span>
+</span></span><span class="line"><span class="cl">antigen theme robbyrussell
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Tell Antigen that you&#39;re done.</span>
+</span></span><span class="line"><span class="cl">antigen apply
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="antigen-usage">Antigen Usage</h2>
+<h3 id="understanding-zshrc">understanding zshrc</h3>
+<p>To make it simple, let&rsquo;s say whenever you fire up your terminal, whatever zshrc contains will be executed. How kool is that?</p>
+<hr>
+<p>That means whatever we&rsquo;ve added to our <code>.zshrc</code> will also be executed?</p>
+<ul>
+<li>yes</li>
+</ul>
+<p>And can we run those lines without using <code>.zshrc</code>?</p>
+<ul>
+<li>yes 👿.
+But make sure to run <code>source ~/antigen.zsh</code> first. Cause, you know, we&rsquo;ve installed our antigen to <code>antigen.zsh</code>.</li>
+</ul>
+<hr>
+<h3 id="understanding-antigen">understanding antigen</h3>
+<p>Now it&rsquo;s time, let&rsquo;s see what&rsquo;ve done so far in <code>.zshrc</code>. We&rsquo;ve first used this line to show him the location of antigen.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> ~/antigen.zsh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then, we&rsquo;ve loaded <a href="https://github.com/ohmyzsh/ohmyzsh" target="_blank" rel="noopener noreffer">oh-my-zsh</a> library (the most popular one for zsh).</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">antigen use oh-my-zsh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Another thing,<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">I&rsquo;m not telling you to run above command! It&rsquo;s inside of your <code>.zshrc</code> file. But yeah! You can run it for sure. It&rsquo;ll work until you close your current terminal/ session. In this way you can check a command before putting into <code>.zshrc</code>.</div>
+        </div>
+    </div>
+<p>As we&rsquo;ve oh-my-zsh now on our hands, who can tell us to stop 😅? Now we can easily load oh-my-zsh bundles using commands like,</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">antigen bundle git
+</span></span><span class="line"><span class="cl">antigen bundle heroku
+</span></span><span class="line"><span class="cl">antigen bundle pip
+</span></span><span class="line"><span class="cl">antigen bundle lein
+</span></span><span class="line"><span class="cl">antigen bundle command-not-found
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>And let&rsquo;s not forget oh-my-zsh themes. In the above example (.zshrc) we&rsquo;ve used <code>robbyrussell</code>. And you can change it for sure! check,</p>
+<ul>
+<li><a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank" rel="noopener noreffer">oh-my-zsh themes collection that you can use directly</a></li>
+</ul>
+<p>Let&rsquo;s say, you want to install the theme, named <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#refined" target="_blank" rel="noopener noreffer">refined</a>. Then you can modify the <code>.zshrc</code> file and set theme to <code>refined</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Load the theme.</span>
+</span></span><span class="line"><span class="cl">antigen theme refined
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="plugin-installation">Plugin installation</h2>
+<p>Now you may want to install custom antigen plugins from various GitHub repositories. And if you don&rsquo;t know what to install, here&rsquo;s a list you can try,</p>
+<ul>
+<li><a href="https://github.com/unixorn/awesome-zsh-plugins" target="_blank" rel="noopener noreffer">awesome zsh plugins</a></li>
+</ul>
+<hr>
+<h3 id="zsh-auto-notify">zsh auto notify</h3>
+<p>For now let&rsquo;s install two most common and interesting plugins! First one is <code>zsh-auto-notify</code>. Whenever a long process is finished you will get a notification through <code>notify-send</code>. Check it&rsquo;s repository,</p>
+<ul>
+<li><a href="https://github.com/MichaelAquilina/zsh-auto-notify" target="_blank" rel="noopener noreffer">ZSH auto notify</a></li>
+</ul>
+<p>Now how can we install it? Simple! Check the URL of GitHub of this repository. It&rsquo;s,</p>
+<p><a href="https://github.com/MichaelAquilina/zsh-auto-notify" target="_blank" rel="noopener noreffer">https://github.com/MichaelAquilina/zsh-auto-notify</a></p>
+<p>We&rsquo;ve to collect the <code>username/repository-name</code>. For this case it&rsquo;s <code>MichaelAquilina/zsh-auto-notify</code>.  Then to install it we have to put the following line to our <code>.zshrc</code>,</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">antigen bundle MichaelAquilina/zsh-auto-notify
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="zsh-autosuggestions">zsh-autosuggestions</h3>
+<p>Similarly let&rsquo;s install one more called <code>zsh-autosuggestions</code>. It&rsquo;s repository&rsquo;s link is,</p>
+<p><a href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank" rel="noopener noreffer">https://github.com/zsh-users/zsh-autosuggestions</a></p>
+<p>So, to install we&rsquo;ve to use,</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">antigen bundle zsh-users/zsh-autosuggestions
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="repo-with-different-branch">Repo with different branch</h3>
+<p>Did you notice the branch name from GitHub for above two commands. It&rsquo;s <em><strong>master</strong></em>, right?</p>
+<p>If your branch isn&rsquo;t master, then our command will be little different.</p>
+<p>Suppose the branch is <code>main</code> then the command will be like,</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">antigen bundle github-user/repo --branch<span class="o">=</span>main
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Another thing,<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Above command is an example. Don&rsquo;t run it, or it&rsquo;ll throw you an error. Suppose in future you fail to install any plugin for errors like,</p>
+<p><code>Error! Activate logging and try again.</code></p>
+<p>Then be sure to check the branch name of that repository.</p>
+</div>
+        </div>
+    </div>
+<h2 id="optimization-and-plugin-settings">Optimization and plugin settings</h2>
+<p>Let&rsquo;s say you&rsquo;ve installed some plugins to test and then you decided not to use them. So you removed them from <code>.zshrc</code>. But the files?</p>
+<p>Did you notice there&rsquo;s a folder in your home directory now called <code>.antigen</code>? This is where all of your plugin exits. If this folder or directory doesn&rsquo;t exist then whenever you&rsquo;ll fire up the terminal, it&rsquo;ll be automatically be created. So what&rsquo;ll you do to optimize your space?</p>
+<ul>
+<li>Just delete the directory 🫠.</li>
+</ul>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i>BTW,<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">If you do regularly backup your dotfiles from your home directory, you don&rsquo;t need to track or backup, that <code>.antigen</code> directory(unless you customize plugins). Just avoid it! It&rsquo;ll be created automatically, as long as <code>antigen.zsh</code> exits and your zshrc knows how to use antigen! 🎃</div>
+        </div>
+    </div>
+<p>Now, what about the plugin settings?</p>
+<ul>
+<li>Discover the <code>.antigen</code> directory and you&rsquo;ll find corresponding plugins. And then I think you can follow along their official documentations!</li>
+</ul>
+<h2 id="uninstallation">Uninstallation</h2>
+<p>To uninstall ZSH, uninstall from your package manager. Then what about antigen? Here antigen isn&rsquo;t a package. So you can just go to your home directory and remove <code>.antigen</code> directory, <code>.zshrc</code> and other zsh stuff and finally <code>antigen.zsh</code>.</p>
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>Now I think, you&rsquo;ve successfully installed antigen and zsh with a good looking theme. If you&rsquo;ve messed up or couldn&rsquo;t follow along, here&rsquo;s my <code>.zshrc</code> after this tutorial.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> ~/antigen.zsh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load the oh-my-zsh&#39;s library.</span>
+</span></span><span class="line"><span class="cl">antigen use oh-my-zsh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Bundles from the default repo (robbyrussell&#39;s oh-my-zsh).</span>
+</span></span><span class="line"><span class="cl">antigen bundle git
+</span></span><span class="line"><span class="cl"><span class="c1"># antigen bundle heroku</span>
+</span></span><span class="line"><span class="cl">antigen bundle pip
+</span></span><span class="line"><span class="cl"><span class="c1"># antigen bundle lein</span>
+</span></span><span class="line"><span class="cl">antigen bundle command-not-found
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Syntax highlighting bundle.</span>
+</span></span><span class="line"><span class="cl">antigen bundle zsh-users/zsh-syntax-highlighting
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load the theme.</span>
+</span></span><span class="line"><span class="cl">antigen theme refined
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">antigen bundle MichaelAquilina/zsh-auto-notify
+</span></span><span class="line"><span class="cl">antigen bundle zsh-users/zsh-autosuggestions
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Tell Antigen that you&#39;re done.</span>
+</span></span><span class="line"><span class="cl">antigen apply
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>If you&rsquo;ve any questions or queries or any doubt, feel free to contact me or maybe <a href="t.me/LinuxUniverse" rel="">our telegram group</a> 😅. And if you don&rsquo;t like ZSH there is also <a href="https://fishshell.com/" target="_blank" rel="noopener noreffer">fish</a>. Maybe I&rsquo;ll write another one for fish, who knows? 😆</p>
+<p>Thanks for reading this far.</p>
+<div class="details admonition quote open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-quote-right fa-fw"></i>TO-DO<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li><i class="far fa-square fa-fw"></i> List useful ZSH plugins</li>
+<li><i class="far fa-square fa-fw"></i> List useful <code>alias</code> for zsh</li>
+</ul>
+<p>I&rsquo;ll really appreciate your help</div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/linux/">linux</a>
+                </span><span><a href="/tags/zsh/">zsh</a>
+                </span><span><a href="/tags/tutorial/">tutorial</a>
+                </span></div><div class="post-info-line"><div class="post-info-mod">
+                <span>Updated on 2022-10-30</span>
+            </div><div class="post-info-mod"><span>
+                            <a class="link-to-markdown" href="/zsh-and-antigen/index.md" target="_blank">Read Markdown</a>
+                        </span><span>
+                        &nbsp;|&nbsp;
+                        <a class="link-to-markdown" href="https://github.com/SharafatKarim/blog-site/edit/main/posts/2022/zsh-and-antigen/index.md" target="_blank">Improve Article</a>
+                    </span></div>
+        </div><div class="post-info-share">
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://sharafat.pages.dev/zsh-and-antigen/" data-title="zsh and antigen - installation to customization" data-via="sharafat2004" data-hashtags="linux,zsh,tutorial"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://sharafat.pages.dev/zsh-and-antigen/" data-hashtag="linux"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://sharafat.pages.dev/zsh-and-antigen/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://sharafat.pages.dev/zsh-and-antigen/" data-title="zsh and antigen - installation to customization" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Pinterest" data-sharer="pinterest" data-url="https://sharafat.pages.dev/zsh-and-antigen/" data-description="A guide to install and customize zsh along with different plugins with the help of antigen plugin manager." data-image="featured-image.png"><i class="fab fa-pinterest fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://sharafat.pages.dev/zsh-and-antigen/" data-title="zsh and antigen - installation to customization"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://sharafat.pages.dev/zsh-and-antigen/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="Share on Pocket" data-sharer="pocket" data-url="https://sharafat.pages.dev/zsh-and-antigen/"><i class="fab fa-get-pocket fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://sharafat.pages.dev/zsh-and-antigen/" data-title="zsh and antigen - installation to customization" data-description="A guide to install and customize zsh along with different plugins with the help of antigen plugin manager."><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://sharafat.pages.dev/zsh-and-antigen/" data-title="zsh and antigen - installation to customization"><i class="fab fa-evernote fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/useful-linux-applications/" class="prev" rel="prev" title="Useful Linux Applications"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a></div></div>
+</div><div id="comments" class="single-card"><div id="vssue"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/meteorlxy/vssue">Vssue</a>.
+            </noscript></div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/about/">Sharafat Karim</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+</div>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.min.js?version=1.0.1', { scope: '/' })
+        .then(() => {
+            console.info('Sharafat Karim\u00A0Service Worker Registered');
+        }, err => console.error('Sharafat Karim\u00A0Service Worker registration failed: ', err));
+
+    navigator.serviceWorker
+        .ready
+        .then(() => {
+            console.info('Sharafat Karim\u00A0Service Worker Ready');
+        });
+}
+</script>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-chevron-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment-alt fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vssue@1.4.8/dist/vssue.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.1-beta.0/dist/css/lightgallery.min.css"><script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.runtime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vssue@1.4.8/dist/vssue.github.min.js"></script><script src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.0/dist/autocomplete.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.1-beta.0/dist/js/lightgallery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.3.0/dist/lg-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.1/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"vssue":{"clientID":"69d56d7f61527a103699","clientSecret":"3be0ac1b185f1f45efce06b7393c0bc5fb27f7d8","owner":"SharafatKarim","repo":"blog-site","title":"zsh and antigen - installation to customization"}},"data":{"id-1":"Sharafat Karim","id-2":"Sharafat Karim"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script src="/js/theme.min.js"></script></body></html>

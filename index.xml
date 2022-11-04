@@ -1,0 +1,102 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Sharafat Karim</title>
+        <link>https://sharafat.pages.dev/</link>
+        <description>A simple, personal and minimal blog site!</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>sharafat2004@gmail.com (Sharafat Karim)</managingEditor>
+            <webMaster>sharafat2004@gmail.com (Sharafat Karim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 30 Oct 2022 08:41:37 &#43;0600</lastBuildDate>
+            <atom:link href="https://sharafat.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>zsh and antigen - installation to customization</title>
+    <link>https://sharafat.pages.dev/zsh-and-antigen/</link>
+    <pubDate>Sun, 30 Oct 2022 08:41:37 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/zsh-and-antigen/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/featured-image.png" referrerpolicy="no-referrer">
+            </div>A guide to install and customize zsh along with different plugins with the help of antigen plugin manager.]]></description>
+</item>
+<item>
+    <title>Useful Linux Applications</title>
+    <link>https://sharafat.pages.dev/useful-linux-applications/</link>
+    <pubDate>Sat, 29 Oct 2022 08:34:36 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/useful-linux-applications/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/useful-linux-apps.png" referrerpolicy="no-referrer">
+            </div>Yet an another list of useful Applications that you can try in Linux.]]></description>
+</item>
+<item>
+    <title>Software Telemetry কি | Basic Concepts</title>
+    <link>https://sharafat.pages.dev/software-telemetry-bangla/</link>
+    <pubDate>Fri, 21 Oct 2022 08:44:28 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/software-telemetry-bangla/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/featured-image.png" referrerpolicy="no-referrer">
+            </div>আমরা অনেকেই সফটওয়্যারের বিভিন্ন খবরে এই টার্মটির সাথে পরিচিত হই। কখনো কি ভেবে দেখেছেন কি এই টেলিমেট্রি? বাংলা ভাষায় টেলিমেট্রি বলতে বিভিন্ন সংজ্ঞা থাকতে পারে। সেদিকে যাবো না, আপনি চাইলে কিছু প্রয়োগ এই লিংক থেকে দেখে নিতে পারেন।
+Stackify- telemetry tutorial Alexandra Altvater এর মতে, Telemetry is the automatic recording and transmission of data from remote or inaccessible sources to an IT system in a different location for monitoring and analysis.]]></description>
+</item>
+<item>
+    <title>Chaotic AUR সম্পর্কে কিছুটা প্রশ্ন উত্তর</title>
+    <link>https://sharafat.pages.dev/chaotic-aur-faq-bangla/</link>
+    <pubDate>Fri, 21 Oct 2022 08:24:27 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/chaotic-aur-faq-bangla/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/featured-image.png" referrerpolicy="no-referrer">
+            </div>কেনো chaotic AUR? compile করতে হবে না - সময় সাশ্রয় আর মনে করেন আপনারটা ব্রাউজার AUR থেকে কম্পাইল করবেন আশা করি আর আপনাকে কিছু বলতে হবেনা Alert! Chaotic AUR শুধুমাত্র archlinux বা, এর derivative, যেমন: endeavour os, archolinux এর জন্য। অবশ্য manjaro তেও কাজ করবে। সাধারণত আমরা ব্রাউজার ৭০ মেগাবাইট বা এর কাছাকাছি কিছু একটা সাইজ দিয়ে নামাতে পারি কিন্তু যখন আপনি একটা ব্রাউজার কম্পাইল করবেন তখন আপনাকে সে ব্রাউজার যে প্রোগ্রামিং ল্যাঙ্গুয়েজ দিয়ে তৈরি সেই প্রোগ্রামিং ল্যাঙ্গুয়েজের কম্পাইলার ডাউনলোড করবে সোর্স কোড থেকে compile করবে তারপর ইন্সটল করবে তারপর আবার ডিপেন্ডেন্সি গুলো আনইন্সটল করে দিবে এবার চিন্তা করে দেখেন কি পরিমাণ সময় লাগতাছে আর কি পরিমাণ ডাটা খরচ হচ্ছে যেমন: বাস্তব অভিজ্ঞতা, enve (compile করা ভার্সন 70 MB এর কাছাকাছি) কিন্ত যখন সোর্স কোড থেকে build করবো সোর্স কোড (হয়তো সর্বোচ্চ 2 থেকে 3 মেগাবাইট) dependency (বিশ্বাস করুন আর না করুন এটা ডিপেন্ডেন্সি 2gb থেকেও বিশাল বড়) তারপর আবার সোর্স থেকেbuild করতে কি পরিমান যে সময় লাগবে সেটা আপনি নিজে চেষ্টা না করলে বুঝবেন না btw, এই enve সফটওয়্যার chaotic AUR এ নাই, অর্থাৎ আপনাকে appimage বা flatpak এর আশ্রয় নিয়ে হবে অথবা কোনো দয়াবান যদি কম্পাইল করে .]]></description>
+</item>
+<item>
+    <title>Font এবং glyph পরিচিতি (পর্ব ১)</title>
+    <link>https://sharafat.pages.dev/font-and-glyph-bangla-1/</link>
+    <pubDate>Fri, 21 Oct 2022 08:06:07 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/font-and-glyph-bangla-1/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/font-glyph-1.png" referrerpolicy="no-referrer">
+            </div>Font কি? ফন্ট কি সেটা আমরা কমবেশি সবাই জানি, সংজ্ঞা জানাটা তেমন গুরুত্বপূর্ণ নয়। আজকের পোষ্টে আলোচনা করবো, ফন্ট আর গ্লিফের মধ্যাকার সম্পর্ক নিয়ে। তো যদি ফন্ট কাকে বলে বলতে চাই, এভাবে চিন্তা করতে পারি, লেখার প্রকাশের ধরণ। আচ্ছা আরও সহজ করে বলি, আমরা অনেকেই হয়তো Microsoft Word বা কোনো word processing সফটওয়্যারে কাজ করেছি। সেখানে আমরা কোনো একটা লেখার সাজ সজ্জা পরিবর্তন করতে, সাধারণত home tab এর অধীণে বিভিন্ন ফন্ট স্টাইল ব্যবহার করে থাকি। তাহলে সহজে সংজ্ঞায়িত করতে চাইলে, বলতে পারি, যা লেখার প্রদর্শনের ধরণ ইঙ্গিত করে সেটাই ফন্ট। Wikipedia অনুযায়ী,]]></description>
+</item>
+<item>
+    <title>আমার দেখা একটি সেরা Linux distro (manjaro Linux)</title>
+    <link>https://sharafat.pages.dev/reason-for-manjaro-bangla-1/</link>
+    <pubDate>Fri, 21 Oct 2022 06:03:15 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/reason-for-manjaro-bangla-1/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/best-linux-distro.png" referrerpolicy="no-referrer">
+            </div>Manjaro সর্বপ্রথম ব্যবহার যোগ্য distro হওয়ার পিছনের কারণসমূহ]]></description>
+</item>
+<item>
+    <title>Markdown Syntax</title>
+    <link>https://sharafat.pages.dev/markdown/</link>
+    <pubDate>Thu, 20 Oct 2022 08:22:05 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/markdown/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/featured-image.png" referrerpolicy="no-referrer">
+            </div>This article shows some useful and daily-driver type syntax, that I may use daily. First, right after heading, one example , followed by it&rsquo;s syntax. I won&rsquo;t explain though 😅.
+Note To learn in detail and easily, you may use following references,
+LoveIt theme documentation GRAV documentation and of course, there is GitHub wiki. I don&rsquo;t think I need to mention this. 😅
+Text formatting List 1 2 * text * text text text 1 2 3 4 5 + text - text - text - text + text text text text text text Note (Above code) +/- doesn&rsquo;t matter here!]]></description>
+</item>
+<item>
+    <title>Love It, Hugo</title>
+    <link>https://sharafat.pages.dev/love-it-hugo/</link>
+    <pubDate>Wed, 19 Oct 2022 11:59:01 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/love-it-hugo/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Umm, Love It, and hugo? What&rsquo;s going on?
+Hugo
+A static site genarator
+Love It
+Yet an another hugo theme
+What&rsquo;s big deal? This article is mainly about Love IT theme&rsquo;s specialities but maybe you can go ahead to it&rsquo;s repo and learn for your own. So I&rsquo;ll be focusing on it&rsquo;s shortcodes which is an important element in hugo!
+If you don&rsquo;t know about shortcodes then here&rsquo;s an example, Writing,]]></description>
+</item>
+<item>
+    <title>Roll back to academy</title>
+    <link>https://sharafat.pages.dev/roll-back-to-academy/</link>
+    <pubDate>Tue, 18 Oct 2022 10:43:09 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/roll-back-to-academy/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/featured-image.png" referrerpolicy="no-referrer">
+            </div><p>I&rsquo;ve wrote a lot of documents, more like cheat sheets (formal language 😅). Some of them were deleted, some of them resides in my old HDD <em>maybe</em> and some of them are in a or two data centers of telegram maybe.</p>
+<p>So I&rsquo;m sharing those which are available in telegram 🏖️</p>]]></description>
+</item>
+<item>
+    <title>A Fresh Start!</title>
+    <link>https://sharafat.pages.dev/a-fresh-start/</link>
+    <pubDate>Mon, 17 Oct 2022 10:11:05 &#43;0600</pubDate><author>sharafat2004@gmail.com (Sharafat Karim)</author><guid>https://sharafat.pages.dev/a-fresh-start/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/featured-image" referrerpolicy="no-referrer">
+            </div><p>There&rsquo;s an another feeling whenever you do something for the first time, right? And this is the first post of this website so it&rsquo;s quite important for me 😅.
+Let&rsquo;s get started!</p>]]></description>
+</item>
+</channel>
+</rss>
