@@ -15,9 +15,9 @@ export default function Page() {
       <main className="relative">
         <Hero />
         <About />
-        <Education />
-        <Projects />
         <LiveTools />
+        <Projects />
+        <Education />
         <Contact />
       </main>
     </div>

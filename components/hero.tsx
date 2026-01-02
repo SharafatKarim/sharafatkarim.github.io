@@ -1,25 +1,55 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { ChevronDown } from "lucide-react"
+
+const TAGLINES = [
+  "There's no end to EXPLORATION!",
+  "Building the future, one commit at a time",
+  "Linux enthusiast & Open Source advocate",
+  "Exploring the realms of Computer Science",
+]
 
 export function Hero() {
   const [text, setText] = useState("")
-  const fullText = "There's no end to EXPLORATION!"
+  const textRef = useRef("")
+  const taglineIndexRef = useRef(0)
+  const isDeletingRef = useRef(false)
   const [showCursor, setShowCursor] = useState(true)
 
   useEffect(() => {
-    let index = 0
-    const timer = setInterval(() => {
-      if (index <= fullText.length) {
-        setText(fullText.slice(0, index))
-        index++
-      } else {
-        clearInterval(timer)
-      }
-    }, 50)
+    let timer: ReturnType<typeof setTimeout>
 
-    return () => clearInterval(timer)
+    const tick = () => {
+      const currentTagline = TAGLINES[taglineIndexRef.current]
+      const currentText = textRef.current
+      const isDeleting = isDeletingRef.current
+
+      const isLineComplete = currentText === currentTagline
+      const shouldErase = isDeleting && currentText.length === 0
+
+      let nextDelay = isDeleting ? 30 : 60
+      let nextText = currentText
+
+      if (isLineComplete && !isDeleting) {
+        isDeletingRef.current = true
+        nextDelay = 1200
+      } else if (shouldErase) {
+        isDeletingRef.current = false
+        taglineIndexRef.current = (taglineIndexRef.current + 1) % TAGLINES.length
+        nextDelay = 200
+      } else {
+        nextText = currentTagline.slice(0, currentText.length + (isDeleting ? -1 : 1))
+      }
+
+      textRef.current = nextText
+      setText(nextText)
+      timer = setTimeout(tick, nextDelay)
+    }
+
+    timer = setTimeout(tick, 0)
+
+    return () => clearTimeout(timer)
   }, [])
 
   useEffect(() => {

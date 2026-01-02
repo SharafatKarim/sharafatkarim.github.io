@@ -33,9 +33,9 @@ export function Navigation() {
   const navItems = [
     { id: "hero", label: "~" },
     { id: "about", label: "whoami" },
-    { id: "education", label: "ls -education" },
-    { id: "projects", label: "cat projects" },
     { id: "tools", label: "echo tools" },
+    { id: "projects", label: "cat projects" },
+    { id: "education", label: "ls -education" },
     { id: "contact", label: "ping me" },
   ]
 
