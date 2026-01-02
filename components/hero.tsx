@@ -37,7 +37,7 @@ export function Hero() {
           <div className="space-y-2">
             <p className="text-terminal-green font-mono text-sm sm:text-base">$ whoami</p>
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
-              <span className="text-foreground">Md Sharafat Karim</span>
+              <span className="text-foreground">Md. Sharafat Karim</span>
             </h1>
           </div>
 

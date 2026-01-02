@@ -1,53 +1,7 @@
 "use client"
 
-import { BookOpen, FileText, Code2, Link2, Send } from "lucide-react"
 import { ExternalLink } from "lucide-react"
-
-const tools = [
-  {
-    category: "Blogs",
-    icon: BookOpen,
-    items: [
-      { name: "Main Blog", url: "https://sharafat.pages.dev/" },
-      { name: "Dev.to", url: "https://dev.to/sharafat/" },
-      { name: "Hashnode", url: "https://sharafat.hashnode.dev/" },
-    ],
-  },
-  {
-    category: "Short Writings",
-    icon: FileText,
-    items: [
-      { name: "Notes", url: "https://sharafat.is-a.dev/notes/" },
-      { name: "Logs", url: "https://sharafat.is-a.dev/logs/" },
-      { name: "Stash", url: "https://sharafat.is-a.dev/stash/" },
-    ],
-  },
-  {
-    category: "Documentation",
-    icon: Code2,
-    items: [
-      { name: "GitBook", url: "https://sharafat.gitbook.io/" },
-      { name: "DSA", url: "https://sharafat.is-a.dev/dsa/" },
-      { name: "Python", url: "https://python.sharafat.xyz/" },
-    ],
-  },
-  {
-    category: "Utilities",
-    icon: Link2,
-    items: [
-      { name: "Code Paste", url: "https://paste.sharafat.xyz/" },
-      { name: "URL Shortener", url: "https://url.sharafat.xyz/" },
-    ],
-  },
-  {
-    category: "Telegram",
-    icon: Send,
-    items: [
-      { name: "@SharafatsNotes", url: "https://t.me/SharafatsNotes" },
-      { name: "@LinuxBangladesh", url: "https://t.me/LinuxBangladesh" },
-    ],
-  },
-]
+import { toolsList } from "@/data/tools-list"
 
 export function LiveTools() {
   return (
@@ -61,7 +15,7 @@ export function LiveTools() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {tools.map((tool) => (
+            {toolsList.map((tool) => (
               <div key={tool.category} className="p-6 rounded-lg border border-terminal-green/20 bg-card space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="p-2 rounded-lg bg-terminal-green/10 text-terminal-green">
