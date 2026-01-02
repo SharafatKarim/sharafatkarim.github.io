@@ -6,7 +6,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-20 sm:py-32 border-t border-terminal-green/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="space-y-4 mb-12">
             <p className="text-terminal-green font-mono text-sm">$ ping sharafat</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-balance">Let's Connect</h2>
