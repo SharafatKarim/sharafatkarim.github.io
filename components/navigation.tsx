@@ -48,7 +48,7 @@ export function Navigation() {
             className="flex items-center gap-2 text-terminal-green hover:text-accent-cyan transition-colors"
           >
             <Terminal className="w-5 h-5" />
-            <span className="font-mono text-sm hidden sm:inline">sharafat.xyz</span>
+            <span className="font-mono text-sm">SharafatKarim</span>
           </button>
 
           <div className="flex items-center gap-1 sm:gap-2">
@@ -60,7 +60,7 @@ export function Navigation() {
                   "px-2 sm:px-3 py-1.5 text-xs sm:text-sm font-mono transition-colors rounded",
                   activeSection === item.id
                     ? "text-accent-cyan bg-accent-cyan/10"
-                    : "text-muted-foreground hover:text-terminal-green",
+                    : "text-muted-foreground hover:text-terminal-green hidden sm:inline-block",
                 )}
               >
                 {item.label}
