@@ -46,7 +46,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           <button
             onClick={() => scrollToSection("hero")}
-            className="flex items-center gap-2 text-terminal-green hover:text-accent-cyan transition-colors"
+            className="flex items-center gap-2 text-terminal-green hover:text-accent-cyan transition-colors cursor-pointer"
           >
             <Image src="/base.svg" alt="Logo" width={24} height={24} />
             <span className="font-mono text-sm">SharafatKarim</span>
@@ -58,7 +58,7 @@ export function Navigation() {
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className={cn(
-                  "px-2 sm:px-3 py-1.5 text-xs sm:text-sm font-mono transition-colors rounded",
+                  "px-2 sm:px-3 py-1.5 text-xs sm:text-sm font-mono transition-colors rounded cursor-pointer",
                   activeSection === item.id
                     ? "text-accent-cyan bg-accent-cyan/10"
                     : "text-muted-foreground hover:text-terminal-green hidden sm:inline-block",
@@ -68,7 +68,7 @@ export function Navigation() {
               </button>
             ))}
             <button
-              className="sm:hidden text-terminal-green hover:text-accent-cyan transition-colors pl-1"
+              className="sm:hidden text-terminal-green hover:text-accent-cyan transition-colors pl-1 cursor-pointer"
               onClick={() => {
                 const menu = document.getElementById("mobile-menu")
                 menu?.classList.toggle("hidden")
@@ -88,7 +88,7 @@ export function Navigation() {
                       document.getElementById("mobile-menu")?.classList.add("hidden")
                     }}
                     className={cn(
-                      "px-3 py-2 text-sm font-mono transition-colors rounded text-left",
+                      "px-3 py-2 text-sm font-mono transition-colors rounded text-left cursor-pointer",
                       activeSection === item.id
                         ? "text-accent-cyan bg-accent-cyan/10"
                         : "text-muted-foreground hover:text-terminal-green",
