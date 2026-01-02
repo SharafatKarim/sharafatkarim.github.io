@@ -15,14 +15,44 @@ export const metadata: Metadata = {
   generator: "v0.app",
   keywords: ["developer", "portfolio", "computer science", "PSTU", "software engineer", "Linux"],
   authors: [{ name: "Md Sharafat Karim" }],
+  metadataBase: new URL("https://www.sharafat.xyz"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Md Sharafat Karim - Developer Portfolio",
+    description:
+      "Computer Science & Engineering student at PSTU. There's no end to EXPLORATION! Portfolio showcasing projects, education, and tools.",
+    url: "https://www.sharafat.xyz",
+    siteName: "Sharafat Karim",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Md Sharafat Karim portfolio preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Md Sharafat Karim - Developer Portfolio",
+    description:
+      "Computer Science & Engineering student at PSTU. There's no end to EXPLORATION! Portfolio showcasing projects, education, and tools.",
+    site: "@sharafat2004",
+    creator: "@sharafat2004",
+    images: ["/og-image.png"],
+  },
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/icon.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "/icon.png",
         media: "(prefers-color-scheme: dark)",
       },
       {
@@ -30,7 +60,7 @@ export const metadata: Metadata = {
         type: "image/svg+xml",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/icon.png",
   },
 }
 

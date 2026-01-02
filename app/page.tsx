@@ -20,6 +20,15 @@ export default function Page() {
         <Education />
         <Contact />
       </main>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: 'Sharafat Karim Portfolio',
+          url: 'https://www.sharafat.xyz',
+          description: 'A developer portfolio showcasing projects, education, and tools by Md Sharafat Karim.',
+        })}
+      </script>
     </div>
   )
 }
