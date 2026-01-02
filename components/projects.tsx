@@ -13,7 +13,11 @@ export function Projects() {
   return (
     <section id="projects" className="py-20 sm:py-32 border-t border-terminal-green/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto relative">
+          <FolderGit2
+            aria-hidden="true"
+            className="hidden lg:block absolute right-0 top-6 w-32 h-32 text-terminal-green/10 pointer-events-none"
+          />
           <div className="space-y-4 mb-12">
             <p className="text-terminal-green font-mono text-sm">$ cat projects.json</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-balance">Projects</h2>
