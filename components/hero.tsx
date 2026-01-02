@@ -60,16 +60,16 @@ export function Hero() {
     <section id="hero" className="min-h-screen flex items-center justify-center relative pt-16">
       <BackgroundRippleEffect />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
+        <div className="max-w-6xl mx-auto text-left space-y-8">
           <div className="space-y-2">
-            <div className="flex justify-center">
+            <div className="flex justify-start">
               <Image
                 src="/base.svg"
                 alt="Personal logo"
                 width={512}
                 height={512}
                 priority
-                className="w-1/3 h-1/3 md:w-2/5 md:h-2/5 lg:w-2/6 lg:h-2/6"
+                className="w-3/6 h-3/6 md:w-2/5 md:h-2/5 lg:max-w-80 lg:max-h-80 z-10"
               />
             </div>
             <p className="text-terminal-green font-mono text-sm sm:text-base">$ whoami</p>
@@ -90,7 +90,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-4 pt-8">
+          <div className="flex items-center justify-start gap-4 pt-8">
             <div className="h-px w-12 bg-terminal-green/30" />
             <span className="text-xs font-mono text-muted-foreground">Developer • Linux Enthusiast</span>
             <div className="h-px w-12 bg-terminal-green/30" />
