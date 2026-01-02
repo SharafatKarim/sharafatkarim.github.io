@@ -30,10 +30,10 @@ export function LiveTools() {
                         href={item.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group flex items-center justify-between text-sm text-muted-foreground hover:text-accent-cyan transition-colors"
+                        className="group flex items-center justify-between text-sm text-muted-foreground hover:text-accent-cyan max-sm:text-accent-cyan transition-colors"
                       >
                         <span>{item.name}</span>
-                        <ExternalLink className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <ExternalLink className="w-3 h-3 opacity-100 transition-opacity" />
                       </a>
                     </li>
                   ))}
