@@ -8,14 +8,14 @@ export const educationList = [
   },
   {
     degree: "Higher Secondary School Certificate in Science",
-    institution: "Notre Dame College, Dhaka",
+    institution: "Notre Dame College, Dhaka (NDC, Dhaka)",
     status: "Completed",
     description:
       "Completed higher secondary education with a focus on science subjects, building a strong foundation in mathematics, physics, and chemistry that supports engineering studies.",
   },
   {
     degree: "Secondary School Certificate in Science",
-    institution: "Shamsul Hoque Khan School and College",
+    institution: "Shamsul Hoque Khan School and College (SHKSC)",
     status: "Completed",
     description: "Foundation in core science subjects.",
   },

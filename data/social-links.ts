@@ -14,16 +14,22 @@ export const socialLinks = [
     handle: "SharafatKarim",
   },
   {
+    name: "Blogs",
+    icon: BookOpen,
+    url: "https://sharafat.pages.dev/",
+    handle: "Sharafat Karim | Blogs",
+  },
+  {
+    name: "YouTube",
+    icon: Youtube,
+    url: "https://www.youtube.com/channel/UCWOzcrU8AABga-LNM9DKYBA",
+    handle: "Sharafat Karim",
+  },
+  {
     name: "Telegram",
     icon: Send,
     url: "https://t.me/SharafatKarim",
     handle: "@SharafatKarim",
-  },
-  {
-    name: "Twitter",
-    icon: Twitter,
-    url: "https://twitter.com/sharafat2004",
-    handle: "@sharafat2004",
   },
   {
     name: "LinkedIn",
@@ -38,15 +44,9 @@ export const socialLinks = [
     handle: "sharafat2004",
   },
   {
-    name: "YouTube",
-    icon: Youtube,
-    url: "https://www.youtube.com/channel/UCWOzcrU8AABga-LNM9DKYBA",
-    handle: "Sharafat Karim",
-  },
-  {
-    name: "Blogs",
-    icon: BookOpen,
-    url: "https://sharafat.pages.dev/",
-    handle: "Sharafat Karim | Blogs",
+    name: "Twitter",
+    icon: Twitter,
+    url: "https://twitter.com/sharafat2004",
+    handle: "@sharafat2004",
   },
 ]
