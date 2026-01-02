@@ -7,6 +7,11 @@ import { cn } from "@/lib/utils"
 
 export function Navigation() {
   const [activeSection, setActiveSection] = useState("hero")
+  const [isHome, setIsHome] = useState(true)
+
+  useEffect(() => {
+    setIsHome(window.location.pathname === "/")
+  }, [])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -31,21 +36,27 @@ export function Navigation() {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
   }
 
-  const navItems = [
-    { id: "hero", label: "~" },
-    { id: "about", label: "whoami" },
-    { id: "tools", label: "echo tools" },
-    { id: "projects", label: "cat projects" },
-    { id: "education", label: "ls -education" },
-    { id: "contact", label: "ping me" },
-  ]
+  const navItems = isHome
+    ? [
+        { id: "hero", label: "~" },
+        { id: "about", label: "whoami" },
+        { id: "tools", label: "echo tools" },
+        { id: "projects", label: "cat projects" },
+        { id: "education", label: "ls -education" },
+        { id: "contact", label: "ping me" },
+      ]
+    : [
+        { id: "hero", label: "~" },
+        { id: "tools", label: "echo tools" },
+        { id: "contact", label: "ping me" },
+    ]
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-terminal-green/20 bg-background/80 backdrop-blur-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <button
-            onClick={() => scrollToSection("hero")}
+            onClick={() => window.location.href = "/"}
             className="flex items-center gap-2 text-terminal-green hover:text-accent-cyan transition-colors cursor-pointer"
           >
             <Image src="/base.svg" alt="Logo" width={24} height={24} />

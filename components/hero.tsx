@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useEffect, useRef, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import { ChevronDown } from "lucide-react"
 import { TAGLINES } from "@/data/taglines"
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect"
@@ -12,41 +12,42 @@ export function Hero() {
   const taglineIndexRef = useRef(0)
   const isDeletingRef = useRef(false)
   const [showCursor, setShowCursor] = useState(true)
+  const timerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
 
-  useEffect(() => {
-    let timer: ReturnType<typeof setTimeout>
+  const tick = useCallback(() => {
+    const currentTagline = TAGLINES[taglineIndexRef.current]
+    const currentText = textRef.current
+    const isDeleting = isDeletingRef.current
 
-    const tick = () => {
-      const currentTagline = TAGLINES[taglineIndexRef.current]
-      const currentText = textRef.current
-      const isDeleting = isDeletingRef.current
+    const isLineComplete = currentText === currentTagline
+    const shouldErase = isDeleting && currentText.length === 0
 
-      const isLineComplete = currentText === currentTagline
-      const shouldErase = isDeleting && currentText.length === 0
+    let nextDelay = isDeleting ? 30 : 60
+    let nextText = currentText
 
-      let nextDelay = isDeleting ? 30 : 60
-      let nextText = currentText
-
-      if (isLineComplete && !isDeleting) {
-        isDeletingRef.current = true
-        nextDelay = 1200
-      } else if (shouldErase) {
-        isDeletingRef.current = false
-        taglineIndexRef.current = (taglineIndexRef.current + 1) % TAGLINES.length
-        nextDelay = 200
-      } else {
-        nextText = currentTagline.slice(0, currentText.length + (isDeleting ? -1 : 1))
-      }
-
-      textRef.current = nextText
-      setText(nextText)
-      timer = setTimeout(tick, nextDelay)
+    if (isLineComplete && !isDeleting) {
+      isDeletingRef.current = true
+      nextDelay = 1200
+    } else if (shouldErase) {
+      isDeletingRef.current = false
+      taglineIndexRef.current = (taglineIndexRef.current + 1) % TAGLINES.length
+      nextDelay = 200
+    } else {
+      nextText = currentTagline.slice(0, currentText.length + (isDeleting ? -1 : 1))
     }
 
-    timer = setTimeout(tick, 0)
-
-    return () => clearTimeout(timer)
+    textRef.current = nextText
+    setText(nextText)
+    timerRef.current = setTimeout(tick, nextDelay)
   }, [])
+
+  useEffect(() => {
+    timerRef.current = setTimeout(tick, 0)
+
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current)
+    }
+  }, [tick])
 
   useEffect(() => {
     const cursorTimer = setInterval(() => {
