@@ -20,6 +20,7 @@ export default function Page() {
         <Education />
         <Contact />
       </main>
+      
       <script type="application/ld+json">
         {JSON.stringify({
           '@context': 'https://schema.org',
