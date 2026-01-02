@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 import { ChevronDown } from "lucide-react"
 import { TAGLINES } from "@/data/taglines"
@@ -61,6 +62,16 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-2">
+            <div className="flex justify-center">
+              <Image
+                src="/base.svg"
+                alt="Personal logo"
+                width={512}
+                height={512}
+                priority
+                className="w-1/3 h-1/3 md:w-2/5 md:h-2/5 lg:w-2/6 lg:h-2/6"
+              />
+            </div>
             <p className="text-terminal-green font-mono text-sm sm:text-base">$ whoami</p>
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
               <span className="text-foreground">Md. Sharafat Karim</span>
