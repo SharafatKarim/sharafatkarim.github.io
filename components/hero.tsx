@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { ChevronDown } from "lucide-react"
 import { TAGLINES } from "@/data/taglines"
+import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect"
 
 export function Hero() {
   const [text, setText] = useState("")
@@ -56,6 +57,7 @@ export function Hero() {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative pt-16">
+      <BackgroundRippleEffect />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-2">
