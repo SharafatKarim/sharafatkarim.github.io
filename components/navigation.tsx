@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Terminal } from "lucide-react"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 export function Navigation() {
@@ -47,7 +48,7 @@ export function Navigation() {
             onClick={() => scrollToSection("hero")}
             className="flex items-center gap-2 text-terminal-green hover:text-accent-cyan transition-colors"
           >
-            <Terminal className="w-5 h-5" />
+            <Image src="/base.svg" alt="Logo" width={24} height={24} />
             <span className="font-mono text-sm">SharafatKarim</span>
           </button>
 
