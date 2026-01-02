@@ -1,6 +1,6 @@
 "use client"
 
-import { Mail } from "lucide-react"
+import { Mail, PhoneCall } from "lucide-react"
 import { socialLinks } from "@/data/social-links"
 
 export function Contact() {
@@ -8,7 +8,7 @@ export function Contact() {
     <section id="contact" className="py-20 sm:py-32 border-t border-terminal-green/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto relative">
-          <Mail
+          <PhoneCall
             aria-hidden="true"
             className="hidden lg:block absolute right-0 top-6 w-32 h-32 text-terminal-green/10 pointer-events-none"
           />
