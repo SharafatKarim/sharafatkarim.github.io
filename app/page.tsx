@@ -26,7 +26,7 @@ export default function Page() {
           '@context': 'https://schema.org',
           '@type': 'WebSite',
           name: 'Sharafat Karim Portfolio',
-          url: 'https://www.sharafat.xyz',
+          url: 'https://sharafat.xyz',
           description: 'A developer portfolio showcasing projects, education, and tools by Md Sharafat Karim.',
         })}
       </script>

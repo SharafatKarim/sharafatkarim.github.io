@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://www.sharafat.xyz/sitemap.xml',
+    sitemap: 'https://sharafat.xyz/sitemap.xml',
   }
 }
