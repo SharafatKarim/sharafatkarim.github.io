@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Md Sharafat Karim portfolio preview",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       "Computer Science & Engineering student at PSTU. There's no end to EXPLORATION! Portfolio showcasing projects, education, and tools.",
     site: "@sharafat2004",
     creator: "@sharafat2004",
-    images: ["/og-image.png"],
+    images: ["/twitter-image.png"],
   },
   icons: {
     icon: [
