@@ -70,7 +70,7 @@ export function Hero() {
                 width={512}
                 height={512}
                 priority
-                className="w-3/6 h-3/6 md:w-2/5 md:h-2/5 lg:max-w-80 lg:max-h-80 z-10"
+                className="w-3/6 md:w-2/5 lg:max-w-64 z-10"
               />
             </div>
             <p className="text-terminal-green font-mono text-sm sm:text-base">$ whoami</p>

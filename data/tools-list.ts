@@ -4,7 +4,7 @@ export const toolsList = [
     category: "Blogs",
     icon: BookOpen,
     items: [
-      { name: "Main Blog", url: "https://sharafat.pages.dev/" },
+      { name: "Main Blog", url: "https://blog.sharafat.xyz" },
       { name: "Dev.to", url: "https://dev.to/sharafat/" },
       { name: "Hashnode", url: "https://sharafat.hashnode.dev/" },
     ],
