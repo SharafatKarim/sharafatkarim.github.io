@@ -1,4 +1,12 @@
 export const projectsList = {
+    "2026": [
+        {
+            name: "Image Bin",
+            description:
+                " A beautiful and minimal image hosting website built with Next.js, Tailwind CSS, shadcn/ui, and Cloudinary.",
+            url: "https://img.sharafat.xyz/",
+        },
+    ],
     "2025": [
         {
             name: "Python Notebook",
