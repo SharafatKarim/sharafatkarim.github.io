@@ -74,9 +74,5 @@
   "overrides": {
     "next": "^16.3.6"
   },
-  "pnpm": {
-    "overrides": {
-      "next": "^16.3.6"
-    }
-  }
+  "packageManager": "pnpm@11.26.0"
 }
